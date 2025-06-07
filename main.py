@@ -11,6 +11,6 @@ for file in listdir(source_folder):
     file_name, file_type= os.path.splitext(file)
     current_file_types.append(file_type)
 for folder_file_type in current_file_types:
-    full_path = os.path.join(source_folder, file_type)
+    full_path = os.path.join(source_folder, folder_file_type)
     os.mkdir(full_path)
     print(full_path)
